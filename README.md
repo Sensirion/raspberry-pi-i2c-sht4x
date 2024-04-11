@@ -38,6 +38,8 @@ Use the following pins to connect your SHT4X:
 
 ### Detailed sensor pinout
 
+Please refer to the datasheet for proper circuit setup. There are also 3rd party boards for easy connection of your SHT4x sensor to the Raspberry Pi.
+
 <img src="images/SHT40_pinout.png" width="300px">
 
 | *Pin* | *Cable Color* | *Name* | *Description*  | *Comments* |
