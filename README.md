@@ -38,15 +38,13 @@ Use the following pins to connect your SHT4X:
 
 ### Detailed sensor pinout
 
-Please refer to the datasheet for proper circuit setup. There are also 3rd party boards for easy connection of your SHT4x sensor to the Raspberry Pi.
-
 <img src="images/SHT40_pinout.png" width="300px">
 
 | *Pin* | *Cable Color* | *Name* | *Description*  | *Comments* |
 |-------|---------------|:------:|----------------|------------|
-| 1 | green | SDA | I2C: Serial data input / output | 
-| 2 | black | GND | Ground | 
-| 3 | yellow | SCL | I2C: Serial clock input | 
+| 1 | green | SDA | I2C: Serial data input / output |
+| 2 | black | GND | Ground |
+| 3 | yellow | SCL | I2C: Serial clock input |
 | 4 | red | VDD | Supply Voltage | 1.1V to 3.6V
 
 
@@ -57,9 +55,9 @@ Please refer to the datasheet for proper circuit setup. There are also 3rd party
 - [Enable the I²C interface in the raspi-config](https://www.raspberrypi.org/documentation/configuration/raspi-config.md)
 - Download the SHT4X driver from [Github](https://github.com/Sensirion/raspberry-pi-i2c-sht4x) and extract the `.zip` on your Raspberry Pi
 - Connect the SHT4X sensor as explained in the [section above](#connect-the-sensor)
-- - The provided example is working with a SHT40, I²C address 0x44.
+- The provided example is working with a SHT40, I²C address 0x44.
   In order to use the code with another product or I²C address you need to change it in the call sht4x_init(ADDRESS) in
-  `sht4x_i2c_example_usage.c`. The list of supported I²C-addresses is found in the header 
+  `sht4x_i2c_example_usage.c`. The list of supported I²C-addresses is found in the header
   `sht4x_i2c.h`.
 
 - Compile the driver
