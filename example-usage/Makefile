@@ -5,7 +5,7 @@ driver_sources = ${src_dir}/sht4x_i2c.h ${src_dir}/sht4x_i2c.c
 
 i2c_implementation ?= ${src_dir}/sensirion_i2c_hal.c
 
-CFLAGS = -Os -Wall -fstrict-aliasing -Wstrict-aliasing=1 -Wsign-conversion -fPIC -I${src_dir} -I.
+CFLAGS = -std=c99 -Os -Wall -fstrict-aliasing -Wstrict-aliasing=1 -Wsign-conversion -fPIC -I${src_dir} -I.
 
 ifdef CI
     CFLAGS += -Werror
